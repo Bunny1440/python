@@ -1,6 +1,6 @@
-'''
+
 #Given a list of integers,
-find and print the sum of all elements in the list.
+#find and print the sum of all elements in the list.
 
 l=[1,2,3,4,5]
 sum=0
@@ -407,11 +407,4 @@ k=2
 for i in range(k):
     x=l.pop(0)
     l.append(x)
-print(l)'''
-
-        
-
-
-
-
-
+print(l)
