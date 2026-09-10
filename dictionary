@@ -1,0 +1,99 @@
+#1)Create a Student Dictionary:
+
+'''D={}
+for i in range(3):
+    d=input("enter the name:")
+    v=input("ener the value:")
+    if v.isdigit():
+        v=int(v)
+    D[d]=v
+print(D)
+
+enter the name:name
+ener the value:abhi
+enter the name:age
+ener the value:23
+enter the name:courese
+ener the value:python
+{'name': 'abhi', 'age': '23', 'courese': 'python'}
+
+#2)Find a Student's Mark 
+D={'ravi':85,'anu':92,'kiran':78}
+for k,v in D.items():
+    if k=='anu':
+        print(v,end=" ")
+        
+#Calculate Total Marks 
+d1={'Maths': 80, 'Science': 75, 'English': 90, 'Social': 85, 'Computer': 95}
+total=0
+for k,v in d1.items():
+    total+=v
+print(total)
+
+#4. Count Dictionary Items 
+D={'name': 'Ravi', 'age': 21, 'city': 'Hyderabad'}
+count=0
+for k,v in D.items():
+    count+=1
+print(count)
+
+
+#Given a dictionary and a key,
+#check whether the key exists in the dictionary.
+#Display Key Found if it exists; otherwise display Key Not Found. 
+D={'name': 'Ravi', 'age': 21, 'city': 'Hyderabad'} 
+for k,v in D.items():
+    if k=="age":
+        print("key found")
+        break
+else:
+    print("not found")
+        
+        
+
+D={'name': 'Ravi', 'age': 21, 'city': 'Hyderabad'}
+if 'age' in D:
+    print("key is found")
+else:
+    print("not found")
+
+#Given a dictionary, a new key, and a new value,
+#add the key-value pair and display
+#the updated dictionary. 
+D={'name': 'Ravi', 'age': 21}
+D['city']='hyderabad'
+print(D)
+{'name': 'Ravi', 'age': 21, 'city': 'hyderabad'}
+
+
+#Update a Dictionary Value 
+D={'name':'ravi','age':21}
+D['age']=23
+print(D)
+
+
+#find the highest marks:
+D={'Ravi': 80, 'Anu': 95, 'Kiran': 75} 
+h=0
+for k,v in D.items():
+    if v>h:
+        h=v
+print(h)
+
+#Given a dictionary containing product names and prices,
+#display the lowest price.
+D={'Pen': 20, 'Book': 50, 'Pencil': 10}
+l=999
+for k,v in D.items():
+    if v<l:
+        l=v
+print(l)
+'''
+#Given a dictionary containing student names and marks,
+#count how many students scored 40 or more.
+l={'Ravi': 75, 'Anu': 35, 'Kiran': 60, 'Ram': 30}
+count=0
+for k,v in l.items():
+    if v>40:
+        count+=1
+print("scored more than 40:",count)
